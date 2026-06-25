@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Profile</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<h1>💼 SMART INTERVIEW PORTAL</h1>
+
+<nav>
+
+<a href="home.html">🏠 Home</a>
+
+<a href="dashboard.html">📊 Dashboard</a>
+
+<a href="questions.html">📚 Mock Test</a>
+
+<a href="profile.html">👤 Profile</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<div class="profile-container">
+
+<div class="profile-card">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+width="130">
+
+<h2 id="pname">Student Name</h2>
+
+<p id="pemail">student@gmail.com</p>
+
+<hr>
+
+<h3>📈 Performance</h3>
+
+<p>Total Tests : <span id="tests">0</span></p>
+
+<p>Highest Score : <span id="highscore">0</span></p>
+
+<p>Average Score : <span id="average">0%</span></p>
+
+<hr>
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 Smart Interview Portal
+
+</p>
+
+</footer>
+
+<script>
+
+document.getElementById("pname").innerHTML=
+localStorage.getItem("name") || "Student";
+
+document.getElementById("pemail").innerHTML=
+localStorage.getItem("email") || "student@gmail.com";
+
+function logout(){
+
+localStorage.clear();
+
+window.location="index.html";
+
+}
+
+
+document.getElementById("pname").innerHTML =
+localStorage.getItem("name");
+
+document.getElementById("pemail").innerHTML =
+localStorage.getItem("email");
+
+function logout(){
+
+localStorage.clear();
+
+window.location="index.html";
+
+}
+
+
+</script>
+
+</body>
+
+</html>

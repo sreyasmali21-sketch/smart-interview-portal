@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Smart Interview Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="navbar">
+
+<h1>SMART INTERVIEW PORTAL</h1>
+
+<nav>
+
+<a href="home.html">🏠 Home</a>
+
+<a href="questions.html">📚 Questions</a>
+
+<a href="dashboard.html">📊 Dashboard</a>
+<a href="profile.html">👤 Profile</a>
+
+
+</nav>
+
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<h2>Welcome Candidate 👋</h2>
+
+<p>
+Practice Technical Interviews with AI Powered Questions
+</p>
+
+<button onclick="window.location='questions.html'">
+Start Mock Test
+</button>
+
+<button onclick="loadAllQuestions()">
+Browse Questions
+</button>
+
+</section>
+
+
+<section class="stats">
+
+<div class="box">
+
+<h2 id="users">0</h2>
+
+<p>Total Users</p>
+
+</div>
+
+<div class="box">
+
+<h2 id="questionsCount">0</h2>
+
+<p>Total Questions</p>
+
+</div>
+
+<div class="box">
+
+<h2>8</h2>
+
+<p>Categories</p>
+
+</div>
+
+</section>
+
+
+<section class="category">
+
+<h2>🔥 Popular Categories</h2>
+
+<div class="cat">
+
+<div>☕ Java</div>
+
+<div>🐍 Python</div>
+
+<div>🌐 HTML/CSS</div>
+
+<div>⚡ JavaScript</div>
+
+<div>🗄 SQL</div>
+
+<div>👨‍💼 HR</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2 style="text-align:center;margin-top:40px;">
+Recent Questions
+</h2>
+
+<div id="allQuestions">
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+
+© 2026 Smart Interview Portal
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+loadDashboard();
+
+loadAllQuestions();
+
+</script>
+
+</body>
+
+</html>

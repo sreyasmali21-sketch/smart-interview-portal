@@ -1,0 +1,307 @@
+/* ==========================
+   SMART INTERVIEW PORTAL CSS
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef2f7;
+}
+
+/* Navbar */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#0f172a;
+color:white;
+}
+
+header h1{
+font-size:35px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:20px;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(90deg,#2563eb,#3b82f6);
+padding:80px;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.hero button{
+padding:14px 30px;
+margin:10px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:18px;
+background:white;
+color:#2563eb;
+}
+
+.hero button:hover{
+background:#dbeafe;
+}
+
+/* Login/Register */
+
+.container{
+width:450px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 10px lightgray;
+}
+
+.container h2{
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.container input,
+.container textarea,
+.container select{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:15px;
+border:1px solid gray;
+border-radius:6px;
+font-size:16px;
+}
+
+.container button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+font-size:18px;
+cursor:pointer;
+}
+
+.container button:hover{
+background:#1d4ed8;
+}
+
+/* Statistics */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:50px;
+flex-wrap:wrap;
+}
+
+.box{
+width:250px;
+background:white;
+padding:25px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 3px 10px lightgray;
+}
+
+.box h1{
+font-size:50px;
+color:#2563eb;
+}
+
+.box p{
+margin-top:10px;
+font-size:20px;
+}
+
+/* Categories */
+
+.category{
+text-align:center;
+margin-top:50px;
+}
+
+.cat{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.cat div{
+width:180px;
+padding:20px;
+background:white;
+border-radius:10px;
+box-shadow:0 3px 10px lightgray;
+font-size:20px;
+}
+
+/* Question Cards */
+
+.card{
+width:90%;
+margin:20px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px lightgray;
+}
+
+.card h3{
+color:#2563eb;
+margin-bottom:10px;
+}
+
+.card p{
+margin-bottom:10px;
+}
+
+.card button{
+padding:10px 20px;
+margin-right:10px;
+border:none;
+border-radius:6px;
+background:#2563eb;
+color:white;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#1d4ed8;
+}
+
+/* Questions */
+
+#questions input{
+width:100%;
+padding:10px;
+margin-top:10px;
+border-radius:6px;
+border:1px solid gray;
+}
+
+/* Profile */
+
+.profile-container{
+display:flex;
+justify-content:center;
+margin-top:50px;
+}
+
+.profile-card{
+width:400px;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 10px lightgray;
+text-align:center;
+}
+
+.profile-card img{
+width:120px;
+height:120px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+.profile-card h2{
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.profile-card p{
+font-size:18px;
+margin:10px;
+}
+
+.profile-card button{
+padding:12px 25px;
+background:red;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.profile-card button:hover{
+background:darkred;
+}
+
+/* Footer */
+
+footer{
+margin-top:50px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:20px;
+}
+
+.hero{
+padding:50px;
+}
+
+.hero h2{
+font-size:35px;
+}
+
+.stats{
+flex-direction:column;
+align-items:center;
+}
+
+.cat{
+flex-direction:column;
+align-items:center;
+}
+
+.container{
+width:90%;
+}
+
+}
